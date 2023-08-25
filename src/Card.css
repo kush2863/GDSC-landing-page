@@ -1,0 +1,55 @@
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+  
+  .card-flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #00a8e8;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .card-back {
+    background-color: #f44336;
+    color: #fff;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: none; /* Hide the back initially */
+  }
+  
+  .card.active .card-back {
+    display: flex; /* Show the back when the card is active */
+  }
+  
+  .card.active .card-front {
+    display: none; /* Hide the front when the card is active */
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between; /* Adjust the spacing between cards as needed */
+    flex-wrap: wrap;
+  }
+    

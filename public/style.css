@@ -1,0 +1,318 @@
+
+
+.menu-btn {
+    color: rgb(77, 45, 45);
+    
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+ }
+ .dropdown-menu {
+    position: relative;
+    display: inline-block;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+   
+    min-width: 160px;
+    z-index: 1;
+ }
+ .nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: -4%;
+    
+ }
+ nav{
+    background-color: white;
+   
+    
+ }
+ .links,.links-hidden{
+    display: inline;
+    color: rgb(77, 45, 45);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+ }
+ .links-hidden{
+    display: block;
+ }
+ .links{
+    display: inline-block;
+ }
+ .links-hidden:hover,.links:hover {
+    background-color: #ffbc04
+ }
+ .dropdown-menu:hover .menu-content {
+    display: block;
+    background-color: #EA4335 ;
+ }
+ .dropdown-menu:hover .menu-btn {
+    background-color: #ffbc04;
+ }
+.Headerlogo{
+    padding-top: 1%;
+    padding-left: 8% ;
+    width: 3%;
+    height: 3%;
+    float: left;
+    
+}
+
+
+.gdsc{
+    padding-top: 1.5%;
+    padding-left: 12%;
+    font-weight: 100;
+    font-size: 150%;
+    color: rgb(150, 149, 149);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.team{
+   text-align: center;
+   margin: auto;
+   width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  image-rendering:optimizeSpeed;
+  margin-bottom: 35px;
+  
+}
+.img{
+   margin:0 70% 10% 35%;
+  width: 300%;
+  height: 300%;
+  
+  padding: 10px;
+}
+.Team{
+   width:10%;
+   height: 10% ;
+   border: 3px solid #039BE5;
+}
+
+
+    footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 5%;
+     
+}
+
+
+.footer {
+   display: flex;
+   flex-flow: row wrap;
+   padding: 0 30px 0px 30px;
+   color: #2f2f2f;
+   background-color: #fff;
+   border-top: 1px solid #e5e5e5;
+ }
+ 
+ .footer > * {
+   flex:  1 100%;
+ }
+ 
+ .footer__addr {
+   margin-right: 1.25em;
+   margin-bottom: 2em;
+ }
+ 
+
+ 
+ 
+ .footer__addr h2 {
+   margin-top: 1.3em;
+   font-size: 15px;
+   font-weight: 400;
+ }
+ 
+ .nav__title {
+   font-weight: 400;
+   font-size: 15px;
+ }
+ 
+ .footer address {
+   font-style: normal;
+   color: #999;
+ }
+ 
+ .footer__btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 36px;
+   max-width: max-content;
+   background-color: rgb(33, 33, 33, 0.07);
+   border-radius: 100px;
+   color: #2f2f2f;
+   line-height: 0;
+   margin: 0.6em 0;
+   font-size: 1rem;
+   padding: 0 1.3em;
+ }
+ 
+ .footer ul {
+   list-style: none;
+   padding-left: 0;
+ }
+ 
+ .footer li {
+   line-height: 2em;
+ }
+ 
+ .footer a {
+   text-decoration: none;
+ }
+ 
+ .footer__nav {
+   display: flex;
+    flex-flow: row wrap;
+ }
+ 
+ .footer__nav > * {
+   flex: 1 50%;
+   margin-right: 1.25em;
+ }
+ 
+ .nav__ul a {
+   color: #999;
+ }
+ 
+ .nav__ul--extra {
+   column-count: 2;
+   column-gap: 1.25em;
+ }
+ 
+ .legal {
+   display: flex;
+   flex-wrap: wrap;
+   color: #999;
+ }
+   
+ .legal__links {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .heart {
+   color: #2f2f2f;
+ }
+ 
+ @media screen and (min-width: 24.375em) {
+   .legal .legal__links {
+     margin-left: auto;
+   }
+ }
+ 
+ @media screen and (min-width: 40.375em) {
+   .footer__nav > * {
+     flex: 1;
+   }
+   
+   .nav__item--extra {
+     flex-grow: 2;
+   }
+   
+   .footer__addr {
+     flex: 1 0px;
+   }
+   
+   .footer__nav {
+     flex: 2 0px;
+   }
+ }
+/* Card container */
+.card-container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   max-width: 80%;
+   margin: 0 auto;
+
+   
+ }
+ 
+ /* Individual card */
+ .flip-card {
+   
+   display: flex;
+   flex-direction: column;
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 1000px;
+ }
+ 
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ 
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+
+ 
+ 
+ .flip-card-front,
+ .flip-card-back {
+  
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ 
+ .flip-card-front {
+   text-align: left;
+   background-color: rgb(15, 208, 159);
+   color: rgb(141, 4, 4);
+ }
+ 
+ .flip-card-back {
+   background-color: #2980b9;
+   color: white;
+   transform: rotateY(180deg);
+   text-align: center;
+  
+ }
+ 
+ 
+/* ... Existing CSS ... */
+
+/* Avatar style */
+.circle-img {
+  margin-left: 30%;
+  border-radius: 50%;
+   width: 35%;
+   height: 35%;
+   position: absolute;
+   top: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+
+ .info{
+   margin: auto;
+  width: 90%;
+  border: 3px solid green;
+  padding: 10px;
+
+ }
